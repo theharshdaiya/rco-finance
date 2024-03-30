@@ -1,0 +1,567 @@
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
+
+:root {
+    --primary-color: #0C45E6;
+    --secondary-color: #0d0b1d;
+    --box-bg-color: #272439;
+}
+
+::placeholder {
+    color: #ffffff60 !important;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    background-color: var(--secondary-color) !important;
+    color: #fff !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.mystyle {
+    background-color: aqua;
+}
+
+.f-14 {
+    font-size: 14px !important;
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.nav-link.active {
+    color: #fff !important;
+}
+
+.btn:hover {
+    color: #fff !important;
+    background-color: #0C45E6 !important;
+    border-color: #0C45E6 !important;
+}
+
+
+/* --------------------------------- logib_reset --------------------------------- */
+
+
+
+
+section#login {
+    background-color: var(--secondary-color);
+}
+
+.logo_sec {
+    background-image: url('../image/Rectangle-5438.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.login_head h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.login_form_main_Box label,
+.buy_token_box_form form .input_box label {
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.login_form_main_Box input,
+.buy_token_box_form form .input_box input,
+.insert-wallet input {
+    border-radius: 50px;
+    background: #ffffff2b;
+    border: 1px solid #ffffff24;
+    color: #ffffff99;
+    line-height: 2;
+    font-weight: 300;
+    max-width: 400px;
+    width: 400px;
+}
+
+.login_form_main_Box button[type="submit"] {
+    width: 100%;
+    border-radius: 50px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.login_form_main_Box .form-control:focus,
+.insert-wallet input:focus {
+    color: #ffffff99 !important;
+    background-color: #ffffff2b;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+
+a.forgot_form_btn,
+.another_link a {
+    font-weight: 500;
+}
+
+.another_link span {
+    color: #ffffff;
+}
+
+#reset_form,
+#login_form {
+    max-width: 400px;
+}
+
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* --------------------------------- logib_reset --------------------------------- */
+
+
+
+
+h2.dash-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.dash_box {
+    background-color: var(--box-bg-color);
+    border-radius: 10px;
+}
+
+button.theme_btn {
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50px;
+    padding-inline: 25px;
+    line-height: 2;
+    border-radius: 34px;
+    padding: 6px 25px !important;
+}
+
+.token_balance_box span {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.buy_token_box p.buy_head,
+p.token_balance {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.buy_token_box_form form .input_box {
+    width: 50%;
+    padding: 8px;
+}
+
+.buy_token_box_form form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buy_token_box_form form .input_box label {
+    font-size: 12px;
+}
+
+.buy_token_box_form form .input_box input {
+    max-width: 100%;
+    width: 100%;
+    font-size: 12px;
+}
+
+.buy_token_box_form form .form-check-input[type=checkbox] {
+    background-color: #ffffff2b;
+    border: 1px solid #ffffff24;
+}
+
+.buy_token_box_form label.form-check-label a {
+    color: #01F4FA;
+    font-weight: 500;
+}
+
+
+/* ======== */
+
+
+div#days {
+    background: linear-gradient(180deg,
+            rgba(12, 69, 230, 1) 0%,
+            rgba(9, 54, 179, 1) 50%,
+            rgba(10, 40, 124, 1) 50%,
+            rgba(17, 63, 192, 1) 100%);
+}
+
+#countdown #tiles {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#countdown #tiles>span {
+    font: bold 48px 'Droid Sans', Arial, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(180deg,
+            rgba(12, 69, 230, 1) 0%,
+            rgba(9, 54, 179, 1) 50%,
+            rgba(10, 40, 124, 1) 50%,
+            rgba(17, 63, 192, 1) 100%);
+    border-top: 1px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    margin: 0 12px;
+    padding: 10px 0;
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    width: 25%;
+}
+
+#countdown .labels {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#countdown .labels li {
+    width: 25%;
+    font-size: 12px;
+    margin-top: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.stage p {
+    margin: 0 10px 0 0;
+}
+
+.stage span {
+    font-size: 12px;
+    background: #1B964C;
+    height: fit-content;
+    padding: 2px 15px;
+    border-radius: 25px;
+}
+
+.stage_con h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.stage_con p {
+    opacity: 0.6;
+}
+
+.sale_progress_amount {
+    font-size: 13px;
+}
+
+.sale_progress_amount p {
+    font-weight: 500;
+}
+
+.referal-link-box {
+    width: 39%;
+    border-right: 2px solid #38344B;
+}
+
+.referal-link-box-link {
+    width: 61%;
+}
+
+.insert-wallet input {
+    max-width: 100%;
+}
+
+.input_box.insert-wallet button.btn {
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px !important;
+}
+
+section#transactions table th,
+section#transactions table td {
+    background: var(--box-bg-color) !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    border-bottom: none !important;
+    line-height: 3.2 !important;
+}
+
+section#transactions tbody tr th,
+section#transactions tbody tr td {
+    border-top: 1px solid #403B57 !important;
+}
+
+section#transactions tbody tr:first-child th,
+section#transactions tbody tr:first-child td {
+    border-top: 2px solid #403B57 !important;
+}
+
+section#transactions table td span.waiting {
+    background-color: #DDA332;
+}
+
+section#transactions table td span.confirm {
+    background-color: #34CB79;
+}
+
+section#transactions table td span.pending {
+    background-color: #EF860B;
+}
+
+section#transactions table td span.confirm,
+section#transactions table td span.pending,
+section#transactions table td span.waiting {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.view_all button.btn {
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50px;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px !important;
+}
+
+table.dataTable.row-border tbody th,
+table.dataTable.row-border tbody td,
+table.dataTable.display tbody th,
+table.dataTable.display tbody td {
+    border-top: none !important;
+}
+
+div#example_length,
+div#example_filter {
+    display: none;
+}
+
+div#example_info.dataTables_info {
+    color: #fff;
+    font-size: 14px;
+}
+
+a#example_previous,
+a#example_next {
+    color: #fff !important;
+    font-size: 24px;
+    font-family: 'Poppins';
+    padding: 0;
+    cursor: pointer;
+}
+
+a.paginate_button {
+    color: rgb(255 255 255 / 40%) !important;
+    font-size: 14px;
+    font-weight: 400 !important;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+div#example_paginate {
+    display: flex;
+    align-items: center;
+}
+
+a.paginate_button.current {
+    background: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+
+.logo_sec {
+    min-height: 100vh;
+}
+
+.dash_box.p-4.d-flex.align-items-center.justify-content-center {
+    height: 100%;
+}
+.stage.mb-2.d-flex.alien-item-center.justify-content-end {
+    margin-bottom: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px) {
+
+    table.dataTable thead th,
+    table.dataTable thead td {
+        padding: 10px 5px;
+    }
+
+    table.dataTable tbody th,
+    table.dataTable tbody td {
+        padding: 8px 4px;
+        font-size: 14px;
+    }
+
+    button.theme_btn {
+        padding-inline: 10px !important;
+        font-size: 12px !important;
+    }
+    section#transactions tbody tr:first-child th, section#transactions tbody tr:first-child td {
+        border-top: 2px solid #403B57 !important;
+        white-space: nowrap;
+    }
+
+}
+
+
+@media(max-width: 767px) {
+    .logo_sec {
+        min-height: 30vh;
+    }
+
+    .login_form_main_Box {
+        margin-top: 30px !important;
+    }
+
+    .login_reset_box {
+        height: auto;
+        width: 170px;
+        max-width: 100%;
+        margin: 0 auto 20px !important;
+    }
+
+    .login_reset_box img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .login_form_main_Box input,
+    .buy_token_box_form form .input_box input,
+    .insert-wallet input {
+        max-width: 100%;
+    }
+
+    #reset_form,
+    #login_form {
+        width: 400px;
+        max-width: 100%;
+    }
+
+    .referal-link-box {
+        width: 100%;
+        border-right: none;
+        justify-content: center;
+    }
+    .dash_box.p-4.d-flex.align-items-center.justify-content-center {
+        height: auto;
+    }
+    .dash_box {
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0px;
+        height: auto;
+    }
+    .transaction_tab{
+        flex-direction: column;
+    }
+    div#example_paginate {
+        justify-content: center;
+    }
+    .crypto_box_img {
+        width: 50px;
+        max-width: 100%;
+    }
+    .crypto_box_img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    h2.dash-title {
+        font-size: 20px;
+    }
+    .buy_token_box p.buy_head, p.token_balance {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .buy_token_box_form form {
+        flex-direction: column;
+    }
+    .buy_token_box_form form .input_box {
+        width: 100%;
+    }
+    .dash_box.p-3.h-100 {
+        height: auto !important;
+    }
+    .stage.mb-2.d-flex.alien-item-center.justify-content-end {
+        margin-bottom: 20px !important;
+    }
+    .stage_con h2 {
+        font-size: 20px;
+    }
+    .referal-link-box-link {
+        width: 100%;
+    }
+    .login_head h2 {
+        font-size: 23px;
+    }
+    .referal-link-box-link.d-flex.align-items-center.justify-content-between.p-4 {
+        justify-content: center !important;
+    }
+    .referal-link-box-link.d-flex.align-items-center.justify-content-between.p-4 button.theme_btn {
+        padding-inline: 45px !important;
+        font-size: 12px !important;
+    }
+}
